@@ -1,11 +1,11 @@
 # StarWarsFavourites
 
 <div>
-  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 300px; height: auto;">
+  <img src="./assets/photo1.jpg" alt="Star Wars" style="width: 150px; height: auto;">
 </div>
 
 <div>
-  <img src="./assets/photo2.jpg" alt="Star Wars" style="max-width: 300px; height: auto;">
+  <img src="./assets/photo2.jpg" alt="Star Wars" style="width: 150px; height: auto;">
 </div>
 
 # Star Wars Favorites Mobile Application
