@@ -1,10 +1,12 @@
 # StarWarsFavourites
 
 <div>
-  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 100%; height: auto;">
+  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 300px; height: auto;">
 </div>
 
-![Image](https://github.com/anastasiia-roiek/StarWarsFavourites/tree/master/assets/photo2.jpg)
+<div>
+  <img src="./assets/photo2.jpg" alt="Star Wars" style="max-width: 300px; height: auto;">
+</div>
 
 # Star Wars Favorites Mobile Application
 
