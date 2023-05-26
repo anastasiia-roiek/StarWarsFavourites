@@ -1,6 +1,8 @@
 # StarWarsFavourites
 
-[![StarWarsFavourites](https://img.youtube.com/vi/IKirmHw-18o/0.jpg)](https://www.youtube.com/watch?v=IKirmHw-18o)
+![Image](https://github.com/anastasiia-roiek/StarWarsFavourites/tree/master/assets/photo1.jpg)
+
+![Image](https://github.com/anastasiia-roiek/StarWarsFavourites/tree/master/assets/photo2.jpg)
 
 # Star Wars Favorites Mobile Application
 
@@ -15,12 +17,15 @@ This mobile application, developed using React Native, allows users to indicate 
 - **Total Counts:** The application displays the total amounts of male, female, and other characters based on the user's selections.
 - **Reset:** The "Reset" button allows users to flush all previously added favorite characters and reset the total count values to zero.
 
+[![StarWarsFavourites](https://img.youtube.com/vi/IKirmHw-18o/0.jpg)](https://www.youtube.com/watch?v=IKirmHw-18o)
+
 ## Prerequisites
 
 Before running the application, ensure that you have the following dependencies installed:
 
 - Node.js
 - React Native CLI
+- Expo
 - Android SDK (for Android development)
 - Xcode (for iOS development)
 
@@ -31,4 +36,24 @@ Before running the application, ensure that you have the following dependencies 
 
 ```shell
 npm install
+```
+
+3. Start the Metro bundler by running the following command:
+ ```shell
+ expo start
+ ```
+
+ or
+
+ ```shell
+ npx react-native start
+ ```
+
+
+## Configuration
+
+To configure the application, you need to update the API endpoint in the code. Locate the file responsible for API requests (e.g., api.js) and update the API_URL variable with the appropriate endpoint.
+
+```shell
+const API_URL = 'https://swapi.dev/api/people/';
 ```

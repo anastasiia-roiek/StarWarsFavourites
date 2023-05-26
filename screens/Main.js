@@ -85,7 +85,7 @@ export default function Main({ navigation }) {
         </View>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => loadScene(item)} >
-        <Text style={styles.title}>{item.name} {item.gender}</Text>
+        <Text style={styles.title}>{item.name}</Text>
       </TouchableOpacity>
     </TouchableOpacity>
   );
