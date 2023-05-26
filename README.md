@@ -1,8 +1,8 @@
 # StarWarsFavourites
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 200px; height: auto;">
-  <img src="./assets/photo2.jpg" alt="Star Wars" style="max-width: 200px; height: auto;">
+  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 150px; height: auto;">
+  <img src="./assets/photo2.jpg" alt="Star Wars" style="max-width: 150px; height: auto;">
 </div>
 
 # Star Wars Favorites Mobile Application
