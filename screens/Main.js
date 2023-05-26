@@ -19,8 +19,8 @@ export default function Main({ navigation }) {
   const [previous, setPrevious] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const loadScene = () => {
-    navigation.navigate('Details');
+  const loadScene = ( character) => {
+    navigation.navigate('Details', { character });
   }
 
   const handleCheckboxPress = (item) => {
@@ -78,13 +78,15 @@ export default function Main({ navigation }) {
   }, [])
 
   const renderItem = ({ item }) => (
-    <TouchableOpacity style={styles.item} onPress={loadScene}> 
+    <TouchableOpacity style={styles.item} onPress={() => loadScene(item)}>
       <TouchableOpacity onPress={() => handleCheckboxPress(item)}>
         <View style={styles.checkbox}>
           {selectedCharacters.includes(item) && <View style={styles.checkmark} />}
         </View>
       </TouchableOpacity>
-      <Text style={styles.title}>{item.name} {item.gender}</Text>
+      <TouchableOpacity onPress={() => loadScene(item)} >
+        <Text style={styles.title}>{item.name} {item.gender}</Text>
+      </TouchableOpacity>
     </TouchableOpacity>
   );
 
