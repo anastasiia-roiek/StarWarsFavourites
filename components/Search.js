@@ -12,15 +12,32 @@ export const Search = ( { setCharacters }) => {
   };
 
   const searchCharacters = (value) => {
-    fetch(`https://swapi.dev/api/people/?search=${encodeURIComponent(value)}`)
-      .then((response) => response.json())
-      .then((data) => {
-        const results = data.results;
-        console.log("Кількість результатів:", results.length);
-        setCharacters(results);
-      })
-      .catch((error) => console.log(error));
+    let timer;
+    
+    const delayedSearch = (searchValue) => {
+      fetch(`https://swapi.dev/api/people/?search=${encodeURIComponent(searchValue)}`)
+        .then((response) => response.json())
+        .then((data) => {
+          const results = data.results;
+          console.log("Кількість результатів:", results.length);
+          setCharacters(results);
+        })
+        .catch((error) => console.log(error));
+    };
+  
+    const debounceSearch = (searchValue) => {
+      if (timer) {
+        clearTimeout(timer);
+      }
+  
+      timer = setTimeout(() => {
+        delayedSearch(searchValue);
+      }, 300);
+    };
+  
+    debounceSearch(value);
   };
+  
 
   return (
     <View style={styles.input_wrapper}>
