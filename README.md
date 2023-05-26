@@ -1,6 +1,8 @@
 # StarWarsFavourites
 
-![Image](https://github.com/anastasiia-roiek/StarWarsFavourites/tree/master/assets/photo1.jpg)
+<div>
+  <img src="./assets/photo1.jpg" alt="Star Wars" style="max-width: 100%; height: auto;">
+</div>
 
 ![Image](https://github.com/anastasiia-roiek/StarWarsFavourites/tree/master/assets/photo2.jpg)
 
