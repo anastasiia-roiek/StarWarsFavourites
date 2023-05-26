@@ -1,4 +1,7 @@
 # StarWarsFavourites
+
+[![StarWarsFavourites](https://img.youtube.com/vi/IKirmHw-18o/0.jpg)](https://www.youtube.com/watch?v=IKirmHw-18o)
+
 # Star Wars Favorites Mobile Application
 
 This mobile application, developed using React Native, allows users to indicate their favorite characters across the Star Wars Universe. Users can view a list of characters, access additional information about each character, and add characters to their favorites. The application also provides the total count of male, female, and other characters based on the user's selections. Additionally, users have the option to reset their favorites list and reset the total counts to zero.
